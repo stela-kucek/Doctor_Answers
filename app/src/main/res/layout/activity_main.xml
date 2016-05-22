@@ -24,12 +24,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Username"
+        android:hint="Username"
         android:ems="10"
         android:id="@+id/editText"
         android:layout_marginTop="41dp"
         android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textIsSelectable="false"
+        android:textStyle="italic"
+        android:clickable="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -37,19 +40,23 @@
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/editText2"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:text="Password" />
+        android:clickable="true"
+        android:hint="Password"
+        android:layout_below="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:textIsSelectable="false"
+        android:textStyle="italic" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
-        android:id="@+id/button"
+        android:id="@+id/loginbutton"
         android:textSize="18dp"
         android:layout_below="@+id/editText2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp" />
+        android:layout_marginTop="28dp"
+        android:onClick="loginButton" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -58,16 +65,17 @@
         android:text="OR"
         android:id="@+id/textView2"
         android:textSize="15dp"
-        android:layout_below="@+id/button"
+        android:layout_below="@+id/loginbutton"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Register"
-        android:id="@+id/button2"
+        android:id="@+id/registerbutton"
         android:textSize="18dp"
         android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="registerButton" />
 
 </RelativeLayout>
