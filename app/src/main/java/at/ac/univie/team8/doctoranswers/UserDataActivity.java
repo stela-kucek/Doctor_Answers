@@ -23,9 +23,9 @@ public class UserDataActivity extends AppCompatActivity {
 
         String welcome = name + ", welcome to your user area!";
 
-        usernameText.setText("Username: " + username);
-        emailText.setText("E-mail: " + email);
-        ageText.setText("Age: " + age);
+        usernameText.setText(username);
+        emailText.setText(email);
+        ageText.setText(age + "");
 
         welcomeText.setText(welcome);
 

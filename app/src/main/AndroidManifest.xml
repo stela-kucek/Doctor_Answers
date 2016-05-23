@@ -31,7 +31,6 @@
             android:value="@integer/google_play_services_version" />
 
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity" />
         <activity android:name=".UserDataActivity" />
     </application>
 
