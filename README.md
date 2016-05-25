@@ -3,24 +3,24 @@ Android Application Project for HCI SS2016
 
 ## Readme - M3
 
-* Gruppe:	[Montag]
+* Gruppe:	Montag
 * Team-Nr.: 8
 * Projektthema: Kommunikation mit dem Arzt/der Ärztin
 
 ### Implementierung
 
-Framework:	[Android]
+Framework:	Android
 
-API-Version:	[Android Lollipop 5.1]
+API-Version:	Android Lollipop 5.1
 
 Geraet(e), auf dem(denen) getestet wurde:
-[Nexus 5X]
+Nexus 5X
 
 Externe Libraries und Frameworks:
 [...]
 
 Dauer der Entwicklung:
-[XX Stunden]
+30 Stunden
 
 Weitere Anmerkungen:
 [...]
