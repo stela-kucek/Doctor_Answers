@@ -1,6 +1,8 @@
 package at.ac.univie.team8.doctoranswers;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -16,6 +18,10 @@ import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String SHARED_PREF_NAME = "LoginData";
+
+    boolean userLoggedIn;
+
     EditText usernameText;
     String usernameStr;
 
@@ -28,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
 
         psswdText = (EditText) findViewById(R.id.editText2);
         psswdStr = "";
+
+        userLoggedIn = false;
 
     }
 
@@ -58,13 +66,17 @@ public class MainActivity extends AppCompatActivity {
                         String email = jsonResponse.getString("email");
                         int age = jsonResponse.getInt("age");
 
+                        SharedPreferences sp = MainActivity.this.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor = sp.edit();
+                        editor.putBoolean("logedIn",true);
+                        editor.putString("username", usernameStr);
+                        editor.putString("name", name);
+                        editor.putString("email", email);
+                        editor.putString("age", age+"");
 
-                        Intent intent = new Intent(MainActivity.this, UserDataActivity.class);
-                        intent.putExtra("name", name);
-                        intent.putExtra("username", usernameStr);
-                        intent.putExtra("email", email);
-                        intent.putExtra("age", age);
+                        editor.commit();
 
+                        Intent intent = new Intent(MainActivity.this, MenuActivity.class);
                         startActivity(intent);
 
                     }
@@ -85,12 +97,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
     public void registerButton(View view) {
 
         Intent intent = new Intent(this, RegisterActivity.class);
         startActivity(intent);
     }
-
 
 }
