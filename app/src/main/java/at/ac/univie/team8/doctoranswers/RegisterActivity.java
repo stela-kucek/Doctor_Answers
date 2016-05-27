@@ -16,7 +16,6 @@ import org.json.JSONObject;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    boolean registerSuccessful;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +26,7 @@ public class RegisterActivity extends AppCompatActivity {
         final EditText etMail = (EditText) findViewById(R.id.email);
         final EditText etUsername = (EditText) findViewById(R.id.username);
         final EditText etPassword = (EditText) findViewById(R.id.password);
+
         final Button submit = (Button) findViewById(R.id.submit);
         final Button back = (Button) findViewById(R.id.back);
 

@@ -8,7 +8,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -17,14 +16,11 @@ public class UserDataActivity extends AppCompatActivity {
     ArrayAdapter<String> userDataAdapter;
     ArrayList<String> userData;
     ListView listview;
-    TextView welcomeText;
 
     public void initialize(){
-        userData = new ArrayList<>();
-
+        userData = new ArrayList<String>();
         listview = (ListView) findViewById(R.id.userData);
 
-        welcomeText = (TextView) findViewById((R.id.welcome));
     }
 
     @Override
@@ -33,6 +29,7 @@ public class UserDataActivity extends AppCompatActivity {
         setContentView(R.layout.activity_user_data);
 
         initialize();
+
         SharedPreferences sp = this.getSharedPreferences(MainActivity.SHARED_PREF_NAME, Context.MODE_PRIVATE);
 
         String name = sp.getString("name", "");
@@ -45,12 +42,8 @@ public class UserDataActivity extends AppCompatActivity {
         userData.add("E-mail: " + email);
         userData.add("Age: " + age);
 
-        userDataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, userData);
+        userDataAdapter = new ArrayAdapter<String>(this, R.layout.mylistitem, userData);
         listview.setAdapter(userDataAdapter);
-
-        String welcome = name + ", welcome to your user area!";
-
-        welcomeText.setText(welcome);
 
     }
 

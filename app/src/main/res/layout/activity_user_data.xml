@@ -16,19 +16,21 @@
         android:text="My Profile"
         android:id="@+id/welcome"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
 
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/userData"
-        android:layout_below="@+id/welcome"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp"
         android:layout_marginBottom="80dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:choiceMode="singleChoice" />
+        android:choiceMode="singleChoice"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -36,7 +38,8 @@
         android:text="Back"
         android:id="@+id/button2"
         android:onClick="backButton"
+        android:textSize="20dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/welcome" />
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

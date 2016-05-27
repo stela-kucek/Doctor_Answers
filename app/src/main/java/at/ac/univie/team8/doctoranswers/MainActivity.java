@@ -19,6 +19,7 @@ import org.json.JSONObject;
 public class MainActivity extends AppCompatActivity {
 
     public static final String SHARED_PREF_NAME = "LoginData";
+    public static final String SHARED_PREF_NAME_2 = "DoctorData";
 
     boolean userLoggedIn;
 
@@ -65,11 +66,14 @@ public class MainActivity extends AppCompatActivity {
                         String name = jsonResponse.getString("name");
                         String email = jsonResponse.getString("email");
                         int age = jsonResponse.getInt("age");
+                        int userID = jsonResponse.getInt("user_id");
 
                         SharedPreferences sp = MainActivity.this.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
                         SharedPreferences.Editor editor = sp.edit();
                         editor.putBoolean("logedIn",true);
+                        editor.putString("userID", userID+"");
                         editor.putString("username", usernameStr);
+                        editor.putString("password", psswdStr);
                         editor.putString("name", name);
                         editor.putString("email", email);
                         editor.putString("age", age+"");

@@ -30,6 +30,11 @@ public class MenuActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void myDoctorsButton(View view){
+            Intent intent = new Intent(this, DoctorHandlerActivity.class);
+            startActivity(intent);
+    }
+
     public void logoutButton(View view){
         AlertDialog.Builder adb = new AlertDialog.Builder(view.getContext());
         adb.setMessage("Do you really want to logout?");
