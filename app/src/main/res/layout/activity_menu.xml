@@ -25,7 +25,8 @@
         android:id="@+id/tippsButton"
         android:src="@drawable/ic_bookmark_black_48dp"
         android:layout_alignTop="@+id/myFilesButton"
-        android:layout_toStartOf="@+id/doctors" />
+        android:layout_toStartOf="@+id/doctors"
+        android:onClick="myTippsButton" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -34,7 +35,8 @@
         android:src="@drawable/ic_folder_black_48dp"
         android:layout_marginBottom="189dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/doctors" />
+        android:layout_alignStart="@+id/doctors"
+        android:onClick="myFilesButton" />
 
     <ImageButton
         android:layout_width="wrap_content"

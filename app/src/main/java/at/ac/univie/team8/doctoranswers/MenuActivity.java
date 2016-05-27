@@ -31,8 +31,18 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void myDoctorsButton(View view){
-            Intent intent = new Intent(this, DoctorHandlerActivity.class);
-            startActivity(intent);
+        Intent intent = new Intent(this, DoctorHandlerActivity.class);
+        startActivity(intent);
+    }
+
+    public void myTippsButton(View view){
+        Intent intent = new Intent(this, TippsActivity.class);
+        startActivity(intent);
+    }
+
+    public void myFilesButton(View view){
+        Intent intent = new Intent(this, FilesActivity.class);
+        startActivity(intent);
     }
 
     public void logoutButton(View view){

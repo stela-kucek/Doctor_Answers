@@ -32,14 +32,13 @@ public class DoctorListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_list);
 
-        SharedPreferences sp = getSharedPreferences(MainActivity.SHARED_PREF_NAME, Context.MODE_PRIVATE);
-        userID = Integer.parseInt(sp.getString("userID", ""));
-
         getUsersDoctors();
 
     }
 
     private void getUsersDoctors() {
+        SharedPreferences sp = getSharedPreferences(MainActivity.SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        userID = Integer.parseInt(sp.getString("userID", ""));
 
         Response.Listener<String> responseListener = new Response.Listener<String>() {
             @Override
@@ -59,9 +58,6 @@ public class DoctorListActivity extends AppCompatActivity {
         loginQueue.add(getUsersDocs);
 
     }
-
-
-
 
     public void backButton(View view) {
         Intent intent = new Intent(this, DoctorHandlerActivity.class);

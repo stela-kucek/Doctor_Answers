@@ -27,7 +27,8 @@
         android:src="@drawable/ic_record_voice_over_black_48dp"
         android:layout_below="@+id/textView9"
         android:layout_alignStart="@+id/doctorsButton"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:onClick="askQuestButton" />
 
     <TextView
         android:layout_width="wrap_content"

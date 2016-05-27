@@ -27,4 +27,9 @@ public class DoctorHandlerActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AddDoctorActivity.class);
         startActivity(intent);
     }
+
+    public void askQuestButton(View view) {
+        Intent intent = new Intent(this, ChooseDocActivity.class);
+        startActivity(intent);
+    }
 }

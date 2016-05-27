@@ -43,7 +43,10 @@
             android:screenOrientation="portrait" />
         <activity android:name=".DoctorHandlerActivity" />
         <activity android:name=".DoctorListActivity" />
-        <activity android:name=".AddDoctorActivity"></activity>
+        <activity android:name=".AddDoctorActivity" />
+        <activity android:name=".ChooseDocActivity" />
+        <activity android:name=".TippsActivity" />
+        <activity android:name=".FilesActivity"></activity>
     </application>
 
 </manifest>
