@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DermatologistActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Allergies"
+        android:id="@+id/textView39"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:layout_marginTop="34dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="What kind of allergy do you have?"
+        android:id="@+id/textView40"
+        android:layout_below="@+id/textView39"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textAlignment="center" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact allergy"
+        android:id="@+id/checkBox24"
+        android:layout_below="@+id/textView40"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food allergy"
+        android:id="@+id/checkBox25"
+        android:layout_below="@+id/checkBox24"
+        android:layout_alignStart="@+id/checkBox24"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insect sting allergy"
+        android:id="@+id/checkBox26"
+        android:layout_below="@+id/checkBox25"
+        android:layout_alignStart="@+id/checkBox25"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sun allergy"
+        android:id="@+id/checkBox27"
+        android:layout_below="@+id/checkBox26"
+        android:layout_alignStart="@+id/checkBox26"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/button29"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/nextButtonAllerg"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:onClick="backButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:id="@+id/nextButtonAllerg"
+        android:layout_marginBottom="30dp"
+        android:textSize="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DermatologistActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rashes"
+        android:id="@+id/textView43"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_marginTop="34dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Where is the rash located and which asociated symptomps do you have?"
+        android:id="@+id/textView44"
+        android:layout_below="@+id/textView43"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textAlignment="center" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/checkBox32"
+        android:layout_below="@+id/textView44"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="30dp"
+        android:checked="false"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Face"
+        android:id="@+id/checkBox33"
+        android:layout_below="@+id/checkBox32"
+        android:layout_alignStart="@+id/checkBox32"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extremities"
+        android:id="@+id/checkBox34"
+        android:layout_below="@+id/checkBox33"
+        android:layout_alignStart="@+id/checkBox33"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intimate zone"
+        android:id="@+id/checkBox35"
+        android:layout_below="@+id/checkBox34"
+        android:layout_alignStart="@+id/checkBox34"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stomach"
+        android:id="@+id/checkBox36"
+        android:layout_below="@+id/checkBox35"
+        android:layout_alignStart="@+id/checkBox35"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blisters"
+        android:id="@+id/checkBox37"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/checkBox32"
+        android:layout_toEndOf="@+id/textView43" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iching"
+        android:id="@+id/checkBox38"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/checkBox33"
+        android:layout_toEndOf="@+id/textView43" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Redness"
+        android:id="@+id/checkBox39"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_above="@+id/checkBox35"
+        android:layout_alignStart="@+id/checkBox38" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:id="@+id/nextButtonRash"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:id="@+id/button32"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:onClick="backButton" />
+</RelativeLayout>

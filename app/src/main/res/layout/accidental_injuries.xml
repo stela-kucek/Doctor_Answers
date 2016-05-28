@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PediatricianGeneralPractitionerActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Accidental injuries"
+        android:id="@+id/textView35"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Which ones do you have?"
+        android:id="@+id/textView36"
+        android:layout_below="@+id/textView35"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animal bite"
+        android:id="@+id/checkBox17"
+        android:layout_below="@+id/textView36"
+        android:layout_alignStart="@+id/textView36"
+        android:checked="false"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Burn"
+        android:id="@+id/checkBox18"
+        android:layout_below="@+id/checkBox17"
+        android:layout_alignStart="@+id/checkBox17"
+        android:checked="false"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bone injury"
+        android:id="@+id/checkBox19"
+        android:layout_below="@+id/checkBox18"
+        android:layout_alignStart="@+id/checkBox18"
+        android:checked="false"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="External bleeding"
+        android:id="@+id/checkBox20"
+        android:layout_below="@+id/checkBox19"
+        android:layout_alignStart="@+id/checkBox19"
+        android:checked="false"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cut"
+        android:id="@+id/checkBox21"
+        android:layout_below="@+id/checkBox20"
+        android:layout_alignStart="@+id/checkBox20"
+        android:checked="false"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insect sting"
+        android:id="@+id/checkBox22"
+        android:layout_below="@+id/checkBox21"
+        android:layout_alignStart="@+id/checkBox21"
+        android:checked="false"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Joint injury"
+        android:id="@+id/checkBox23"
+        android:layout_below="@+id/checkBox22"
+        android:layout_alignStart="@+id/checkBox22"
+        android:checked="false"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/nextButtonA"
+        android:layout_below="@+id/checkBox23"
+        android:layout_alignEnd="@+id/textView36"
+        android:layout_marginTop="41dp"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/button24"
+        android:layout_alignTop="@+id/nextButtonA"
+        android:layout_alignStart="@+id/checkBox23"
+        android:textSize="20dp"
+        android:onClick="backButton" />
+
+</RelativeLayout>

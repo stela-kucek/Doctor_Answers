@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DermatologistActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Infections"
+        android:id="@+id/textView41"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:layout_marginTop="34dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="What kind of infection do you have?"
+        android:id="@+id/textView42"
+        android:layout_below="@+id/textView41"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textAlignment="center" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acne"
+        android:id="@+id/checkBox28"
+        android:layout_below="@+id/textView42"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Infected cut/scratch"
+        android:id="@+id/checkBox29"
+        android:layout_below="@+id/checkBox28"
+        android:layout_alignStart="@+id/checkBox28"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Swelling"
+        android:id="@+id/checkBox30"
+        android:layout_below="@+id/checkBox29"
+        android:layout_alignStart="@+id/checkBox29"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Redness"
+        android:id="@+id/checkBox31"
+        android:layout_below="@+id/checkBox30"
+        android:layout_alignStart="@+id/checkBox30"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:id="@+id/nextButtonInf"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:id="@+id/button31"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="backButton" />
+</RelativeLayout>

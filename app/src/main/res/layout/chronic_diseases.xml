@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PediatricianGeneralPractitionerActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Chronic Symptoms"
+        android:id="@+id/textView31"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Which ones do you have?"
+        android:id="@+id/textView32"
+        android:layout_below="@+id/textView31"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Backache"
+        android:id="@+id/checkBox8"
+        android:layout_below="@+id/textView32"
+        android:layout_alignStart="@+id/textView32"
+        android:layout_marginTop="25dp"
+        android:checked="false"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chest pain"
+        android:id="@+id/checkBox9"
+        android:layout_below="@+id/checkBox8"
+        android:layout_alignStart="@+id/checkBox8"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Headache"
+        android:id="@+id/checkBox10"
+        android:layout_below="@+id/checkBox9"
+        android:layout_alignStart="@+id/checkBox9"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heart rythm problems"
+        android:id="@+id/checkBox11"
+        android:layout_below="@+id/checkBox10"
+        android:layout_alignStart="@+id/checkBox10"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High blood pressure"
+        android:id="@+id/checkBox12"
+        android:layout_below="@+id/checkBox11"
+        android:layout_alignStart="@+id/checkBox11"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Low blood pressure"
+        android:id="@+id/checkBox13"
+        android:layout_below="@+id/checkBox12"
+        android:layout_alignStart="@+id/checkBox12"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High blood sugar"
+        android:id="@+id/checkBox14"
+        android:layout_below="@+id/checkBox13"
+        android:layout_alignStart="@+id/checkBox13"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Low blood sugar"
+        android:id="@+id/checkBox15"
+        android:layout_below="@+id/checkBox14"
+        android:layout_alignStart="@+id/checkBox14"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Joint pain"
+        android:id="@+id/checkBox16"
+        android:layout_below="@+id/checkBox15"
+        android:layout_alignStart="@+id/checkBox15"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/nextButtonC"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/button20"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/nextButtonC"
+        android:layout_alignStart="@+id/checkBox16"
+        android:onClick="backButton" />
+
+</RelativeLayout>

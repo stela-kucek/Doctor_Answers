@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DentistActivity"
+    android:textAlignment="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Swelling"
+        android:id="@+id/textView47"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_marginTop="34dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Which associated symptoms do you have?"
+        android:id="@+id/textView48"
+        android:layout_below="@+id/textView47"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="External redness"
+        android:id="@+id/checkBox43"
+        android:layout_below="@+id/textView48"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="30dp"
+        android:checked="false"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Internal redness"
+        android:id="@+id/checkBox44"
+        android:layout_below="@+id/checkBox43"
+        android:layout_alignStart="@+id/checkBox43"
+        android:checked="false"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fever"
+        android:id="@+id/checkBox45"
+        android:layout_below="@+id/checkBox44"
+        android:layout_alignStart="@+id/checkBox44"
+        android:checked="false"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pain"
+        android:id="@+id/checkBox46"
+        android:checked="false"
+        android:layout_below="@+id/checkBox45"
+        android:layout_alignStart="@+id/checkBox45"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bleeding"
+        android:id="@+id/checkBox47"
+        android:layout_below="@+id/checkBox46"
+        android:layout_alignStart="@+id/checkBox46"
+        android:checked="false"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:id="@+id/button30"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:onClick="backButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:id="@+id/nextButtonSw"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp" />
+</RelativeLayout>

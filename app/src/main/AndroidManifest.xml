@@ -46,7 +46,12 @@
         <activity android:name=".AddDoctorActivity" />
         <activity android:name=".ChooseDocActivity" />
         <activity android:name=".TippsActivity" />
-        <activity android:name=".FilesActivity"></activity>
+        <activity android:name=".FilesActivity" />
+        <activity android:name=".PediatricianGeneralPractitionerActivity" />
+        <activity android:name=".AskDoctorActivity" />
+        <activity android:name=".AfterQuestionActivity" />
+        <activity android:name=".DentistActivity" />
+        <activity android:name=".DermatologistActivity"></activity>
     </application>
 
 </manifest>

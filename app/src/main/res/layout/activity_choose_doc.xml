@@ -27,19 +27,20 @@
         android:text="Choose a specialist:"
         android:id="@+id/textView25"
         android:textSize="25dp"
+        android:layout_marginTop="36dp"
         android:layout_below="@+id/textView24"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="52dp" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="General practitioner"
         android:id="@+id/button6"
-        android:textSize="15dp"
+        android:textSize="20dp"
         android:layout_below="@+id/textView25"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp" />
+        android:layout_marginTop="36dp"
+        android:onClick="generalPractitioner" />
 
     <Button
         android:layout_width="wrap_content"
@@ -47,9 +48,11 @@
         android:text="Dentist"
         android:id="@+id/button7"
         android:layout_below="@+id/button6"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
-        android:textSize="15dp" />
+        android:textSize="20dp"
+        android:layout_alignStart="@+id/button6"
+        android:layout_alignEnd="@+id/button6"
+        android:onClick="dentist" />
 
     <Button
         android:layout_width="wrap_content"
@@ -57,9 +60,11 @@
         android:text="Pediatrician"
         android:id="@+id/button8"
         android:layout_below="@+id/button7"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="44dp"
-        android:textSize="15dp" />
+        android:textSize="20dp"
+        android:onClick="pediatrician"
+        android:layout_alignStart="@+id/button7"
+        android:layout_alignEnd="@+id/button7" />
 
     <Button
         android:layout_width="wrap_content"
@@ -68,8 +73,10 @@
         android:id="@+id/button9"
         android:layout_marginTop="46dp"
         android:layout_below="@+id/button8"
-        android:layout_centerHorizontal="true"
-        android:textSize="15dp" />
+        android:textSize="20dp"
+        android:layout_alignStart="@+id/button8"
+        android:layout_alignEnd="@+id/button8"
+        android:onClick="dermatologist" />
 
     <Button
         android:layout_width="wrap_content"

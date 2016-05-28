@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DentistActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pain"
+        android:id="@+id/textView45"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_marginTop="34dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="What kind of pain are you experiencing?"
+        android:id="@+id/textView46"
+        android:layout_below="@+id/textView45"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textAlignment="center" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gum pain"
+        android:id="@+id/checkBox40"
+        android:layout_marginTop="40dp"
+        android:checked="false"
+        android:layout_below="@+id/textView46"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="41dp"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jaw pain"
+        android:id="@+id/checkBox41"
+        android:layout_below="@+id/checkBox40"
+        android:layout_alignStart="@+id/checkBox40"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toothache"
+        android:id="@+id/checkBox42"
+        android:layout_below="@+id/checkBox41"
+        android:layout_alignStart="@+id/checkBox41"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:id="@+id/nextButtonPain"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:id="@+id/button33"
+        android:layout_marginLeft="30dp"
+        android:layout_alignTop="@+id/nextButtonPain"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:onClick="backButton" />
+</RelativeLayout>
