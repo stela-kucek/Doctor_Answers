@@ -1,7 +1,7 @@
 # Doctor_Answers
 Android Application Project for HCI SS2016
 
-## Readme - M3
+## Readme - M4
 
 * Gruppe:	Montag
 * Team-Nr.: 8
@@ -29,6 +29,24 @@ Unsere Datenbank - Doctor Answers, enthält 2 Tabellen: user und doctor. Diese e
 User seine eigene Registrierung, das Login und das Hinzufügen eines Doctors in sein System.
 Die Kommunikation der App mit der Datenbank wird über 4 .php Files, die in dem public_html Verzeichnis
 des Hosts gespeichert wurden, und über das neue Android Package "Volley" realisiert.
+
+#### M4 UPDATES:
+- Nun ist auch die Funktion des Hinzufügen eines Attachments - konkret: Foto - implementiert.
+Diese ermöglicht dem User, ein Foto mit der integrierten Kamera des Geräts aufzunehmen und dieses an die Frage "anzuhängen".
+Die Idee hinter der "Photo-Attachment" Funktion wird detailierter im .pdf Dokument beschrieben und erläutert.
+
+Im Zusammenhang damit, kommen hier die zwei 'Dangerous Permissions' WRITE_EXTERNAL_STORAGE und READ_EXTERNAL_STORAGE zum Einsatz.
+Ab Android 6.0 wird für diese Art von Permissions der User direkt während der Runtime aufgefordert, diese zuzulassen oder zu verbieten.
+Nachdem der User einmal (und zwar beim ersten Auftreten des Bedarfs nach dieser Permission) akzeptiert/abgelehnt hat, wird diese Entscheidung
+von der App "gemerkt" und danach wird nicht mehr gefragt (es sei den es werden die in der App lokal gespeicherten Infos mittels z.B. "wipe data"
+gelöscht).
+
+- Es wurden Verbesserungen im Layout und Input einerseits wegen der neuen Funktion, andererseits wegen dem konstruktiven Feedback
+der Testnutzer, durchgeführt. Details sind im .pdf beschrieben.
+
+Dauer der Weiterentwicklung und Optimierung:
+30 Stunden
+
 
 Der gesamte Code ist auch auf GitHub committed (https://github.com/veryredheaded/Doctor_Answers, Stela Kucek)
 

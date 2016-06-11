@@ -41,7 +41,7 @@
         android:textSize="30dp"
         android:layout_below="@+id/textView34"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"><requestFocus />
+        android:layout_marginTop="80dp"><requestFocus />
     </EditText>
 
 
@@ -83,7 +83,8 @@
         android:textSize="20dp"
         android:onClick="askButton"
         android:layout_below="@+id/textView34"
-        android:layout_alignEnd="@+id/textView33" />
+        android:layout_alignEnd="@+id/textView33"
+        android:layout_marginTop="20dp" />
 
 </RelativeLayout>
 </ScrollView>
