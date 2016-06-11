@@ -52,18 +52,18 @@ public class FilesActivity extends AppCompatActivity {
         forDentist.add("Tooth1.jpg");
         forDentist.add("Tooth2.jpg");
         forDentist.add("Broken_tooth.jpg");
-        forDentist.add("File_from_dentist.docx");
+        forDentist.add("File_from_dentist.jpg");
 
 
         List<String> forDermat = new ArrayList<String>();
         forDermat.add("Skin_issue1.jpg");
         forDermat.add("New_issue2.jpg");
-        forDermat.add("Dermat_advice.docx");
+        forDermat.add("Dermat_advice.jpg");
 
         List<String> forGP = new ArrayList<String>();
         forGP.add("Joint_twist.jpg");
         forGP.add("Bleeding_knee.jpg");
-        forGP.add("Nutrition_plan.docx");
+        forGP.add("Nutrition_plan.jpg");
 
         List<String> forPed = new ArrayList<String>();
 

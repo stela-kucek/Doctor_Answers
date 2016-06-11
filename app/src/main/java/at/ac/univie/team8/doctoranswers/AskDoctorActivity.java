@@ -31,6 +31,11 @@ public class AskDoctorActivity extends AppCompatActivity {
         finish();
     }
 
+    public void attachButton(View view){
+        Intent intent = new Intent(this, CameraActivity.class);
+        startActivity(intent);
+    }
+
     public void askButton(View view){
         tToast("Your question has been sent!");
         String q = question.getText().toString();

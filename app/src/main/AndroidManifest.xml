@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="at.ac.univie.team8.doctoranswers">
-
+    <uses-feature android:name="android.hardware.camera2"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
@@ -17,6 +19,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,24 +37,28 @@
 
         <activity
             android:name=".RegisterActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
         <activity
             android:name=".UserDataActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".MenuActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".DoctorHandlerActivity" />
-        <activity android:name=".DoctorListActivity" />
-        <activity android:name=".AddDoctorActivity" />
-        <activity android:name=".ChooseDocActivity" />
-        <activity android:name=".TippsActivity" />
-        <activity android:name=".FilesActivity" />
-        <activity android:name=".PediatricianGeneralPractitionerActivity" />
-        <activity android:name=".AskDoctorActivity" />
-        <activity android:name=".AfterQuestionActivity" />
-        <activity android:name=".DentistActivity" />
-        <activity android:name=".DermatologistActivity"></activity>
+        <activity android:name=".DoctorHandlerActivity" android:screenOrientation="portrait" />
+        <activity android:name=".DoctorListActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AddDoctorActivity" android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".ChooseDocActivity" android:screenOrientation="portrait" />
+        <activity android:name=".TippsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".FilesActivity" android:screenOrientation="portrait" />
+        <activity android:name=".PediatricianGeneralPractitionerActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AskDoctorActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".AfterQuestionActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".DentistActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".DermatologistActivity" android:screenOrientation="portrait" />
+        <activity android:name=".CameraActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"> </activity>
     </application>
 
 </manifest>
