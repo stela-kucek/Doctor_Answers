@@ -47,7 +47,4 @@ der Testnutzer, durchgeführt. Details sind im .pdf beschrieben.
 Dauer der Weiterentwicklung und Optimierung:
 30 Stunden
 
-
-Der gesamte Code ist auch auf GitHub committed (https://github.com/veryredheaded/Doctor_Answers, Stela Kucek)
-
 Die .php Dateien sind außerhalb des Projekt-Verzeichnises einzusehen.
